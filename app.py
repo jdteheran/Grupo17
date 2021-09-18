@@ -1,1 +1,3 @@
-print('Hola mundo')
+numero = input('pasame un numero: ')
+
+print('el numero es: ', numero)
