@@ -8,10 +8,11 @@
     font-weight: normal;
     font-style: normal;
     font-display: block;
-  }
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: #e8e8e8;
 }
 
 footer {
@@ -144,10 +145,66 @@ section article {
     background: white;
     border: 1px solid black;
     width: 48%;
+    margin: 5px 0px 10px 15px;
+    border-radius: 0px 10px 10px 10px;
+    border: none;
+    display: inline-block;
+    -webkit-box-shadow: 6px 7px 0px -2px rgba(0,0,0,0.47);
+-moz-box-shadow: 6px 7px 0px -2px rgba(0,0,0,0.47);
+box-shadow: 6px 7px 0px -2px rgba(0,0,0,0.47);
 }
 
 section article .post {
     border-bottom: 2px solid #22bce0;
+    display: flex;
+}
+
+section article .post .contenido{
+   margin-left: 20px;
+   width: 100%;
+}
+
+section article .post .contenido .titulo-autor h3{
+    margin: 5px 0px 0px 0px;
+    font-style: italic;
+}
+
+section article .post .contenido .titulo-autor p{
+    margin: 5px 0px 0px 0px;
+}
+
+section article .post .contenido .titulo-autor span{
+    color: #dd4f24;
+    text-decoration: underline #dd4f24;
+}
+
+section article .post .contenido .tag-tiempo {
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+section article .post .contenido .tag-tiempo .tag {
+    float: left;
+}
+
+section article .post .contenido .tag-tiempo .tiempo {
+    float: right;
+    margin-top: 5px;
+}
+
+section article .post .contenido .tag-tiempo .tag p{
+    background: #22bce0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+section article .post .contenido .tag-tiempo .tiempo p {
+    color: #7a7a7a
+}
+
+section article .post .contenido .tag-tiempo .tiempo p span{
+    font-weight: bold;
 }
 
 section article .post img {
@@ -166,7 +223,33 @@ section article .estadisticas .iconitos {
     float: right;
 }
 
+section article .estadisticas .iconitos .estrellita {
+    margin: 0px 20px 0px 10px;
+}
+
+section article .estadisticas .iconitos .estrellita::after {
+    font-family: 'icomoon';
+    content: "\e9d8";  
+}
+
 section article .estadisticas .contador .farriba:before, section article .estadisticas .contador .fabajo:before {
     font-family: 'icomoon';
     content: "\ea1c";  
+}
+
+section article .estadisticas .contador {
+    display: flex;
+    margin-top: 15px;
+}
+
+section article .estadisticas .contador .contenedor-farriba {
+    margin: 0px 10px 0px 20px;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg); 
+}
+
+section article .estadisticas .contador .contenedor-fabajo {
+    margin: 0px 0px 0px 10px;
+    -webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg); 
 }
