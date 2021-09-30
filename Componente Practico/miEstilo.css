@@ -27,3 +27,7 @@ form input[type="submit"] {
     margin: auto;
     margin-top: 15px;
 }
+
+section form div img {
+    width: 60px;
+}

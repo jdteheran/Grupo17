@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function despuesde2segundos() {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve('resuelto');
+                }, 2000);
+            });
+        }
+
+        async function asyncCall() {
+            console.log("ejecutando");
+            const result = await despuesde2segundos();
+            console.log(result);
+            console.log("terminado")
+        }
+
+        async function miFuncion() {
+            await asyncCall();
+            console.log("sera que termino")
+        }
+
+        miFuncion();
+        console.log("y ahora?")
+
+    </script>
+
+</body>
+
+</html>

@@ -67,3 +67,17 @@ function validar_formulario() {
     
     return sw
 }
+
+let imgOjo = document.querySelector("section form div img")
+imgOjo.addEventListener("mouseover", mostrarPassword)
+imgOjo.addEventListener("mouseout", ocultarPassword)
+
+function mostrarPassword() {
+    let inputPass = document.querySelector("#pass")
+    inputPass.type = "text"
+}
+
+function ocultarPassword() {
+    let inputPass = document.querySelector("#pass")
+    inputPass.type = "password"
+}
